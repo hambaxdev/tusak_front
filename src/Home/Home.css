@@ -1,0 +1,43 @@
+.home-container {
+    background-image: url('../assets/tusa_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Полупрозрачный фон для текста */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff5722;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e64a19;
+}

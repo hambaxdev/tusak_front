@@ -1,0 +1,73 @@
+.buy-ticket-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.ticket-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+}
+
+.concert-image {
+    width: 100%;
+    height: 250px;
+    background-image: url('../assets/ticket.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.ticket-info {
+    margin-top: 15px;
+}
+
+.ticket-info h2 {
+    margin: 10px 0;
+}
+
+.ticket-info p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.quantity-input,
+.email-input {
+    margin: 10px 0;
+}
+
+.quantity-input label,
+.email-input label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.quantity-input input,
+.email-input input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
