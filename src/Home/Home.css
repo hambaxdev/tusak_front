@@ -8,23 +8,35 @@
     align-items: center;
     color: white;
     text-align: center;
+    padding: 0 20px;
+    /* Добавляем внутренние отступы, чтобы текст не прилипал к краям */
 }
 
 .content {
     background-color: rgba(0, 0, 0, 0.5);
-    /* Полупрозрачный фон для текста */
-    padding: 20px;
+    padding: 10px;
+    /* Уменьшаем внутренние отступы */
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    /* Устанавливаем фиксированную ширину */
+    max-width: 600px;
+    /* Ограничиваем максимальную ширину */
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2em;
+    /* Уменьшаем размер текста */
     margin-bottom: 0.5em;
 }
 
 p {
-    font-size: 1.5em;
-    margin-bottom: 1em;
+    font-size: 1em;
+    /* Уменьшаем размер текста */
+    margin-bottom: 0.5em;
+    /* Уменьшаем отступы между параграфами */
 }
 
 button {
@@ -40,4 +52,18 @@ button {
 
 button:hover {
     background-color: #e64a19;
+}
+
+/* Дополнительные стили для блока информации о покупке */
+.event-details {
+    margin-bottom: 1em;
+}
+
+.small-bold-text p {
+    font-size: 1em;
+    /* уменьшаем размер текста */
+    font-weight: bold;
+    /* делаем текст жирным */
+    margin: 0.2em 0;
+    /* уменьшаем отступы между параграфами */
 }
