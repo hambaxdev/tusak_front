@@ -1,42 +1,81 @@
 .home-container {
-    background-image: url('../assets/tusa_bg.jpg');
-    background-size: cover;
-    background-position: center;
+    position: relative;
     height: 100vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     color: white;
     text-align: center;
     padding: 0 20px;
-    /* Добавляем внутренние отступы, чтобы текст не прилипал к краям */
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/bg_home.jpeg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0.6;
+    /* Затемнение на 40% */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Полупрозрачный черный цвет */
+    z-index: 1;
+}
+
+.content-container {
+    position: relative;
+    z-index: 2;
+    /* Обеспечивает, что контент будет поверх фона */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.image-container {
+    width: 60%;
+    max-width: 500px;
+}
+
+.dj-image {
+    width: 30%;
+    border-radius: 10px;
 }
 
 .content {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    /* Уменьшаем внутренние отступы */
+    padding: 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 80%;
-    /* Устанавливаем фиксированную ширину */
-    max-width: 600px;
-    /* Ограничиваем максимальную ширину */
+    max-width: 800px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 h1 {
     font-size: 2em;
-    /* Уменьшаем размер текста */
     margin-bottom: 0.5em;
 }
 
 p {
     font-size: 1em;
-    /* Уменьшаем размер текста */
     margin-bottom: 0.5em;
-    /* Уменьшаем отступы между параграфами */
 }
 
 button {
@@ -54,16 +93,12 @@ button:hover {
     background-color: #e64a19;
 }
 
-/* Дополнительные стили для блока информации о покупке */
 .event-details {
     margin-bottom: 1em;
 }
 
 .small-bold-text p {
     font-size: 1em;
-    /* уменьшаем размер текста */
     font-weight: bold;
-    /* делаем текст жирным */
     margin: 0.2em 0;
-    /* уменьшаем отступы между параграфами */
 }

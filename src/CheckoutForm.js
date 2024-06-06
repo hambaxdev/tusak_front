@@ -56,13 +56,14 @@ export default function CheckoutForm() {
       <div className="info-form">
         <h2>Информация о покупке</h2>
         <div className="event-details small-bold-text">
-          <p>Frankfurt am Main</p>
-          <p>SCALA CLUB</p>
-          <p>Дата: 24 июня 2024</p>
-          <p>Цена билета: 25 Euro.</p>
+          <p>Dortmund</p>
+          <p>Light Club</p>
+          <p>Дата: 14 Июня 2024</p>
+          <p>Цена билета: 10 Euro.</p>
         </div>
         <p>Пожалуйста, введите ваш адрес электронной почты:</p>
         <input type="email" value={email} onChange={handleEmailChange} placeholder="Введите ваш email" />
+        <p>Все подробности будут высланны на указанный E-Mail</p>
       </div>
       <div className="card">
         <div className="payment-container">
